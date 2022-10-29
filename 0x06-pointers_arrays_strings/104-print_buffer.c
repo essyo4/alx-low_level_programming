@@ -25,9 +25,10 @@ void print_buffer(char *b, int size)
 		}
 		for (index = 0; index < 10; index++)
 		{
-			if ((ndex + byte) >= size)
+			if ((index + byte) >= size)
 				break;
-			else if (*(b + index + byte) >= 31 && *(b + index + byte) <= 126)
+			else if (*(b + index + byte) >= 31 &&
+				 *(b + index + byte) <= 126)
 				printf("%c", *(b + index + byte));
 			else
 				printf(".");
