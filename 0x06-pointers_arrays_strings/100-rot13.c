@@ -8,8 +8,7 @@
 
 char *rot13(char *str)
 {
-	int x = 0;
-	int y;
+	int x = 0, y;
 
 	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'f',
 			     'G', 'H', 'I', 'J', 'K', 'L',
