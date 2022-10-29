@@ -28,9 +28,9 @@ char *rot13(char *str)
 			     'x', 'y', 'z', 'a', 'b', 'c',
 			     'd', 'e', 'f', 'g', 'h', 'i',
 			     'j', 'k', 'l', 'm'};
-	while (str[x])
+	for (x = 0; str[x] != '\0'; y++)
 	{
-		for (y = 0; y <= 52; y++)
+		for (y = 0; alphabet[y] !=  '\0'; y++)
 		{
 			if (str[x] == alphabet[y])
 			{
@@ -38,7 +38,6 @@ char *rot13(char *str)
 				break;
 			}
 		}
-		x++;
 	}
 	return (str);
 }
