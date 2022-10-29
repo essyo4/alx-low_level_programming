@@ -41,4 +41,5 @@ char *rot13(char *str)
 		}
 		x++;
 	}
+	return (str);
 }
