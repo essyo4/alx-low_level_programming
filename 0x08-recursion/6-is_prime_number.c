@@ -4,7 +4,7 @@ int check_prime(int, int);
 /**
  * is_prime_number - prime indetifier
  * @n: the number
- * Return: prime number
+ * Return: integer
  */
 
 int is_prime_number(int n)
@@ -27,5 +27,4 @@ int chech_prime(int n, int i)
 	if ((n / i) < i)
 		return (1);
 	return (chech_prime(n, i + 1));
-}
- 
+} 
