@@ -18,7 +18,7 @@ int is_prime_number(int n)
  * Return: a, 1. 0
  */
 
-int chech_prime(int n, int i)
+int check_prime(int n, int i)
 {
 	if (n <= 1)
 		return (0);
@@ -26,5 +26,5 @@ int chech_prime(int n, int i)
 		return (0);
 	if ((n / i) < i)
 		return (1);
-	return (chech_prime(n, i + 1));
-} 
+	return (check_prime(n, i + 1));
+}
